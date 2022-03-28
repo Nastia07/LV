@@ -1,0 +1,194 @@
+:root {
+  --red: #980002;
+  --dark_red: rgba(152, 0, 2, 0.58);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  background-color: black;
+  color: white;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  padding-left: 80px;
+  padding-right: 80px;
+}
+.btn {
+  display: block;
+  background-color: var(--red);
+  color: black;
+  text-align: right;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 6px 40px 6px 0;
+  width: 400px;
+  transition: all 0.3s ease;
+}
+
+.btn:hover,
+.btn:focus {
+  color: white;
+}
+
+.banner {
+  width: 100%;
+  height: 100%;
+  padding: 90px 0 0px 90px;
+  background-image: url(../img/bg1.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.banner__img {
+  position: relative;
+  right: 0;
+  text-align: right;
+  left: auto;
+  padding-bottom: 90px;
+  z-index: 2;
+}
+
+.banner__img img {
+  width: 83vw;
+}
+.banner__img::before {
+  position: absolute;
+  content: url(../img/blood1.png);
+  right: 5vw;
+  top: 7%;
+  z-index: -1;
+}
+.banner__img::after {
+  position: absolute;
+  bottom: 0;
+  right: 75vw;
+  content: url(../img/blood2.png);
+}
+
+.decorations {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/bg2.png), url(../img/bg3.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top right, bottom left;
+}
+
+.decorations__text {
+  max-width: 700px;
+  width: 100%;
+  padding-right: 50px;
+}
+.decorations__item_wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 100px 0;
+}
+.decoration__item:nth-child(2n + 1) {
+  margin-top: 35px;
+}
+
+.decoration__item:last-child {
+  margin-top: -115px;
+  margin-left: 20%;
+}
+
+.decoration__item p {
+  text-transform: uppercase;
+}
+.decoration__item .color {
+  padding-left: 60px;
+  padding-bottom: 15px;
+  color: var(--red);
+  font-weight: bold;
+}
+
+.decoration__item .withZV {
+  position: relative;
+}
+
+.decoration__item .withZV::before {
+  position: absolute;
+  top: -50px;
+  left: 0;
+  content: "";
+  background-image: url(../img/ZV.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 35px;
+  height: 45px;
+}
+
+.change_branding__collage {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1.5fr;
+  margin: 0 0 0 auto;
+  padding: 115px 0;
+  background-image: url(../img/blood3.png);
+  background-repeat: no-repeat;
+  background-position: center right;
+  justify-content: right;
+  width: 90vw;
+}
+
+.change_branding__collage img {
+  width: 100%;
+  height: 100%;
+}
+
+.twitter {
+  padding: 80px 125px;
+  text-align: center;
+  background-color: var(--dark_red);
+}
+
+.twitter p {
+  max-width: 800px;
+  margin: 0 auto;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.twitter__question {
+  width: 40vw;
+  height: 100px;
+  margin: 55px auto 40px;
+  padding: 15px;
+  background-color: white;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.twitter__btn {
+  width: 55vw;
+}
+
+@media screen and (max-width: 780px) {
+  .banner__wrap {
+    padding: 50px 0 50px 50px;
+  }
+}
