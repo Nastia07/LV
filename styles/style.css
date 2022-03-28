@@ -178,10 +178,15 @@ img {
   width: 60vw;
   margin: 0 0 0 auto;
 }
+.change_branding__small_img.ch {
+  margin: 0 auto 0 0;
+}
+
 .change_branding__example {
-  background-image: url(../img/blood3.png), url(../img/blood7.png);
+  background-image: url(../img/blood7.png), url(../img/blood3.png),
+    url(../img/blood7.png);
   background-repeat: no-repeat;
-  background-position: 100% 60%, 0% 90%;
+  background-position: 0 15%, 100% 60%, 0% 90%;
 }
 
 .change_branding__example_info {
@@ -213,14 +218,11 @@ img {
 
 .twitter__question {
   width: 40vw;
-  height: 100px;
   margin: 55px auto 40px;
-  padding: 15px;
-  background-color: white;
   color: rgba(0, 0, 0, 0.5);
 }
 
-.twitter__btn {
+.twitter__link {
   width: 55vw;
 }
 @media screen and (max-width: 1024px) {
@@ -254,7 +256,7 @@ img {
     margin: 30px 0px;
     width: 100%;
   }
-  .twitter__btn {
+  .twitter__link {
     width: 100%;
     text-align: center;
     padding: 6px 15px;
@@ -300,7 +302,7 @@ img {
 @media screen and (max-width: 420px) {
   .btn {
     width: 100%;
-    padding: 6px 20px 6px 0;
+    padding: 6px 10px;
   }
   .banner {
     padding: 60px 0 0px 60px;
@@ -331,6 +333,9 @@ img {
     margin: 50px 0;
   }
 
+  .change_branding__small_img {
+    width: 75vw;
+  }
   .change_branding__collage {
     padding: 50px 0;
     background-size: contain;
